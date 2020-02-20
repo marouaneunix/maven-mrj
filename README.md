@@ -1,4 +1,4 @@
-##Goals:
+## Goals:
 
     - clean (delete target dir)
     - compile (compile the source code (classes, ...) on target)
