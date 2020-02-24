@@ -61,3 +61,59 @@ Is used to specify the visibility of a dependency, relative to the diff lifecycl
     - test: are not needed to build and run the project, They are needed to compile and run the unit tests. 
     - system (never use)
     - import
+
+## 5- Repositories
+
+### Local Repository
+    maven storage: ~/.m2
+    storage path : ~/.m2/repository/<groupId>/<artifactId>
+### Remote Repository
+    default location: repo.maven.apache.org
+    config : settings.xml
+#### Example
+```
+<repositories>
+    <repository>
+        <id>spring-snapshot</id>
+        <name>Spring Maven SNAPSHOT Repository</name>
+        <ur>http://repo....</url>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+        <releases>
+            <enables>false</enabled>
+        </releases>
+    </repository>
+</repositories>
+```
+
+## 6- Plugins
+    Goals == plugins (clean, deploy...)
+```
+<plugin>
+    <artifactId>maven-clean-plugin</artifactId>
+    <version>3.1.0</version>
+    <executions>
+        <execution>
+            <id>clean</id>
+            ....
+        </execution>
+    </executions>
+</plugin>
+```
+### Phases
+    - validate: validate project and structure
+    - compile:
+    - test
+    - package
+    - integration-test: deploy and run integration tests
+    - verify
+    - install
+    - deploy
+### Compiler Plugin
+    Invokes javac, Default older (1.5), Configuration, fork, memory, source/target
+### Jar Plugin
+
+### Source Plugin
+
+### Javadoc Plugin
