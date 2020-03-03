@@ -6,34 +6,7 @@
     <packaging>jar</packaging>
     <name>mvnprj</name>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-<<<<<<< HEAD
-            <version>3.7</version>
-=======
-            <version>3.9</version>
->>>>>>> 092078e520c1b8e0a74f287c4e4638c2823d3c2d
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-<<<<<<< HEAD
-            <version>5.4.10.Final</version>
-=======
-            <version>5.4.12.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.6.0</version>
-            <scope>test</scope>
->>>>>>> 092078e520c1b8e0a74f287c4e4638c2823d3c2d
-        </dependency>
-    </dependencies>
     <build>
-        <finalName>foo</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

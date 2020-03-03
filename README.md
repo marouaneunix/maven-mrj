@@ -1,3 +1,53 @@
+## What is Maven
+    build tool : 
+        one artifact
+        Manage Dependencies
+    Project management tool: Handles the management or versionning of your code
+        Handles Versioning/Releases
+        he can produce extra information ( Javadoc/site information, source code
+## Who owns it
+    Apache Software Foundation 
+    Maven is built with Maven
+    Open source
+## Why use it
+    - Repeatable builds
+    - Transitive dependencies
+    - Environment
+    - Local repo
+    - IDE and Standalone
+    - Preferred method (preferred choice for working with build tools like jenkins...)
+
+## Installation
+    1- Download the maven zip
+    2- Config $JAVA_HOME
+    3- Config $MAVEN_HOME
+    4- Edit $PATH : $JAVA_HOME/bin && $MAVEN_HOME/bin
+    5- test with : java -version && mvn -version
+## Demo
+    
+    --> pom.xml
+        <project>
+            <groupId>ma.naf</groupId>
+            <artifactId>maven-prj</artifactId>
+            <modelVersion>4.0.0</modelVersion>
+            <version>1.0.0-SNAPSHOT</version>
+            <packaging>jar</packaging>
+            <name>mvnprj</name>
+        </project>
+    --> create HelloWorld.java in src/main/java
+    --> mvn clean
+    --> mvn compile
+    --> if You have Java 10+
+        the add plugin maven-compiler-plugin with config release
+    --> test : java HelloWorld
+    --> mvn package
+
+## Folder Structure
+    src/main/java
+    src/test/java
+    target
+    pom.xml
+
 ## Goals:
 
     - clean (delete target dir)
